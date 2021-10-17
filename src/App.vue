@@ -1,6 +1,7 @@
 <template>
   <div id="app" :class="typeof weather.main != 'undefined' && weather.main.temp > 16 ? 'warm' : ''">
     <main>
+      <h5>A raincheck before your next meet cute?</h5>
       <div class="search-box">
         <input 
           type="text" 
@@ -77,7 +78,7 @@ body {
   background-image: url('./assets/coldDay.jpeg');
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: top;
+  background-position: center;
   transition: 0.4s;
 }
 #app.warm {
@@ -86,7 +87,16 @@ body {
 main {
   min-height: 100vh;
   padding: 25px;
-  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.75));
+}
+
+h5 {
+  font-size: 30px;
+  font-weight: 500;
+  color: #fff;
+  text-align: center;
+  text-shadow: 1px 3px rgba(0, 0, 0, 0.25);
+  margin: 2rem 0;
+
 }
 .search-box {
   width: 100%;
