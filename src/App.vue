@@ -74,13 +74,14 @@ body {
   font-family: 'montserrat', sans-serif;
 }
 #app {
-  background-image: url('./assets/cold-bg.jpeg');
+  background-image: url('./assets/coldDay.jpeg');
+  background-repeat: no-repeat;
   background-size: cover;
-  background-position: bottom;
+  background-position: top;
   transition: 0.4s;
 }
 #app.warm {
-  background-image: url('./assets/warm-bg.jpeg');
+  background-image: url('./assets/clearSky.jpeg');
 }
 main {
   min-height: 100vh;
